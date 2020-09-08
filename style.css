@@ -5,4 +5,38 @@
 }
 html{
   font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+header{
+  width: 100%;
+  background-color:  #1b2127;
+  height: 7rem;
+
+}
+.containerhead{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  width: 100rem;
+  align-items: center;
+
+}
+.containerhead > img{
+  width: 20rem;
+  height: 6rem;
+}
+.containerhead nav {
+  display: flex;
+  align-items: center;
+}
+.containerhead ul{
+  display: flex;
+  list-style: none;
+}
+.containerhead a{
+  color: white;
+  margin: 0 2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
