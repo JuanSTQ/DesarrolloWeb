@@ -8,10 +8,9 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 header{
-  width: 100%;
   background-color:  #1b2127;
   height: 7rem;
-
+  min-width: 98rem;
 }
 .containerhead{
   display: flex;
@@ -24,7 +23,7 @@ header{
 }
 .containerhead > img{
   width: 20rem;
-  height: 6rem;
+
 }
 .containerhead nav {
   display: flex;
@@ -34,9 +33,173 @@ header{
   display: flex;
   list-style: none;
 }
+.containerhead li{
+
+  border: white solid  0.1rem;
+  border-radius: 0.5rem;
+  margin: 0 0.3rem;
+}
 .containerhead a{
   color: white;
   margin: 0 2rem;
   font-size: 1.6rem;
   text-decoration: none;
+}
+/* Main */
+/* Section 1 - Hero */
+main{
+  width: 100%;
+  margin: 0 auto; 
+  background-color:  #fafafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+.hero{
+  width: 100%;
+  background-color:  #1b2127;
+  height: 100%;
+  margin: 0 auto;
+}
+.hero div{
+  max-width: 100rem;
+  min-width: 32rem;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.container-Hero img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+.container-Hero h1{
+  color: white;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: 0.02rem;
+  text-transform: capitalize; 
+  margin: 0;
+}
+#l strong{
+  color: #026fff;
+}
+/* Portafolio */
+strong{
+  color: black;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+}
+.portfolio{
+  width: 100rem;
+  margin: 0 auto;
+  background-color:#fafafa;
+}
+.article-portafolio{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: solid black 0.1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  padding: 4rem  0;
+}
+.content-portafolio{
+  width: 50%;
+  height: 25rem;
+}
+.content-portafolio h3{
+  font-size: 3rem;
+  margin-bottom: 0.1rem;
+}
+.content-portafolio h6{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.fecha{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+.puedes{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.content-portafolio p{
+  font-size: 1.5rem;
+}
+.content-portafolio figure{
+  width: 50%;
+}
+.container-image img{
+  width: 45rem;
+  height: 25rem;
+}
+/* Photography */
+.photography{
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.article-Photo{
+  height: 40.8rem;
+  width: 31rem;
+  background-color: #f4fbff;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+
+}
+.container-texto{
+  background-color: white;
+  text-align: center;
+  width: 27rem;
+  padding: 2rem 2rem 3rem 2rem;
+  height: 24.5rem;
+  margin: 0 auto;
+  position: relative;
+  top: -4rem;
+
+}
+.article-Photo img{
+  width: 31rem;
+  height: 18rem;
+}
+.article-Photo p{
+  margin: 2rem 0;
+  font-size: 1.15rem;
+}
+.article-Photo a {
+  text-decoration: none;
+  padding: 3px 20px;
+  border: 1px solid #026fff;
+  color: #026fff;
+  border-radius: 5px;
+}
+.Title-photo{
+  width: 100rem;
+  margin: 0 auto;
 }
