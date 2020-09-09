@@ -273,3 +273,30 @@ h2{
 .social-link.instagram{                                                                                                                                                                   
  background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/instagram.svg');
 }
+/* Footer */
+footer{
+  background-color:  #1b2127;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.dere img {
+  width: 10rem;
+  height: 4rem;
+}
+.dere{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.izq a{
+  text-decoration: none;
+  color: white;
+}
+.izq{
+  padding-right: 1rem ;
+}
