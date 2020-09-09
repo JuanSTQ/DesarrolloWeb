@@ -203,3 +203,73 @@ h2{
   width: 100rem;
   margin: 0 auto;
 }
+/* Datos */
+.Datos{
+  width: 100%;
+  background-color: #026fff;
+  height: 12.5rem;
+}
+
+.container{
+  width: 100rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Inputs label{
+  display: flex;
+  flex-direction: column;
+
+}
+.Inputs span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: -0.1rem;
+}
+.Inputs .text{
+  width: 21rem;
+  height: 3rem;
+  border: gray solid 0.1rem;
+  border-radius: 0.5rem;
+  padding: 5px 25px;
+  background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/envelope.svg');
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  background-position-x: 0.25rem ;
+  background-position-y: 0.4rem ;
+}
+.Inputs .submit{
+  width: 8rem;
+  height: 2rem;
+  background-color: transparent;
+  color: white;
+  border: solid white 0.1rem;
+  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
+  
+}
+.social-link{
+  display: inline-block;
+  margin: 0px 15px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px, 50px;
+
+}
+.social-link.twitter{
+  background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/twitter.svg');
+}
+.social-link.facebook{
+ background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/facebook.svg');
+
+}
+.social-link.youtube{
+ background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/github.svg');
+}
+.social-link.instagram{                                                                                                                                                                   
+ background-image: url('D:/C_D/Escuela de desarrollo web/Curso desarrollo web Online/desarrollo-web-portafolio-9/Imagenes y recursos/desarrollo-web-portafolio/images/instagram.svg');
+}
