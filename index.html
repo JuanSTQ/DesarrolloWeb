@@ -10,14 +10,15 @@
   <title>Juan Tello OFICIAL</title>
 </head>
 <body>
+  <icon class="icon-menu menuH"></icon>
   <header>
     <div class="containerhead">
       <img src="./images/logo.png" alt="Logo">
       <nav class="header__nav">
         <ul>
-          <li class="li-header"><a href="#Portafolio">Portafolio</a></li>
-          <li class="li-header"><a href="#Pasatiempo">fotografias</a></li>
-          <li class="li-header"><a href="#contactos">Trabajemos juntos</a></li>
+          <li class="li-header"><a class="anclaH" href="#Portafolio">Portafolio</a></li>
+          <li class="li-header"><a class="anclaH2" href="#Pasatiempo">fotografias</a></li>
+          <li class="li-header"><a class="anclaH3" href="#contactos">Trabajemos juntos</a></li>
   
         </ul>
       </nav>
@@ -148,5 +149,39 @@
        </div>
      </section>
   </footer> 
+  <script>
+ /*    Number = 0; */
+    /* MEDIA QUERIS EN JAVA */
+    const mobile = window.matchMedia('screen and (max-width:480px)');
+    mobile.addListener(validation);
+    function validation(evento){
+      if(evento.matches){
+        iconoH.addEventListener('click', active);
+        ancla1.addEventListener('click', active);
+        ancla2.addEventListener('click', active);
+        ancla3.addEventListener('click', active);
+      }
+      else{
+        iconoH.removeEventListener('click', active);
+      }
+    }
+
+    const menu = document.querySelector('.header__nav');
+    const iconoH = document.querySelector('.menuH');
+    const ancla1 = document.querySelector('.anclaH');
+    const ancla2 = document.querySelector('.anclaH2');
+    const ancla3 = document.querySelector('.anclaH3');
+
+
+    function active(){
+      /* Number++; */
+      if(menu.classList.contains('isactive')){
+        menu.classList.remove('isactive');
+      }else{
+        menu.classList.add('isactive');
+      }
+    }
+  </script>
 </body>
+
 </html>

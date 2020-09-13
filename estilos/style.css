@@ -54,7 +54,21 @@ header{
 .icon-menu:before {
   content: "\e900";
 }
-
+.menuH{
+  display: none;
+  background-color:  #1b2127;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  color: white;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  z-index:4;
+}
 
 .containerhead{
   display: flex;
@@ -355,6 +369,7 @@ footer{
   }
   h1{
     z-index: 1;
+    padding-left: 10px;
   }
   .container-Hero{
     overflow: hidden;
@@ -467,9 +482,36 @@ footer{
   .header__nav ul{
     display: initial;
   }
-  .header__nav{
+  .header__nav ul li{
+    height: 100px;
+  }
+  .header__nav ul li a{
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+  .menuH{
     display: block;
   }
+  .header__nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,255, .7) ;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .isactive{
+    left: 0;
+  }
+  
 /*   .content-portafolio{
     font-size: 15px;
   }
@@ -519,11 +561,14 @@ footer{
   margin-bottom: 10px;
  
  }
- .container-Hero h1{
-  z-index: 1;
-  font-size: 3.35rem;
-}
 
+.container-Hero h1{
+  z-index: 1;
+  font-size: 3.2rem;
+}
+.container-Hero{
+  padding: 45px 0;
+}
  
 }
 @media screen and (max-width:320px){
