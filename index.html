@@ -152,28 +152,27 @@
   <script>
  /*    Number = 0; */
     /* MEDIA QUERIS EN JAVA */
+    const mobile = window.matchMedia('screen and (max-width:480px)');
     const menu = document.querySelector('.header__nav');
     const iconoH = document.querySelector('.menuH');
     const ancla1 = document.querySelector('.anclaH');
     const ancla2 = document.querySelector('.anclaH2');
     const ancla3 = document.querySelector('.anclaH3');
-    const mobile = window.matchMedia('screen and (max-width:480px)');
+    mobile.addListener(validation);
     function validation(evento){
-      if(evento.match){
+      if(evento.matches){
         iconoH.addEventListener('click', active);
-        ancla1.addEventListener('click', active);
-        ancla2.addEventListener('click', active);
-        ancla3.addEventListener('click', active);
+        ancla1.addEventListener('click', vali);
+        ancla2.addEventListener('click', vali);
+        ancla3.addEventListener('click', vali);
+
       }
       else{
         iconoH.removeEventListener('click', active);
-        ancla1.removeEventListener('click', active);
-        ancla2.removeEventListener('click', active);
-        ancla3.removeEventListener('click', active);
+
       }
     }
     validation(mobile);
-
     function active(){
       /* Number++; */
       if(menu.classList.contains('isactive')){
@@ -182,6 +181,10 @@
         menu.classList.add('isactive');
       }
     }
+    function vali(){
+      menu.classList.remove('isactive');
+    }
+
   </script>
 </body>
 
