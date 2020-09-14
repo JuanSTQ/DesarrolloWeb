@@ -11,6 +11,10 @@ header{
   background-color:  #1b2127;
   height: 7rem;
 }
+.isactive{
+  left: 0;
+}
+
 /* FUENTE-ICON */
 @font-face {
   font-family: 'icomoon';
@@ -508,10 +512,7 @@ footer{
     justify-content: center;
     transition: .3s;
   }
-  .isactive{
-    left: 0;
-  }
-  
+ 
 /*   .content-portafolio{
     font-size: 15px;
   }
